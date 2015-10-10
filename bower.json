@@ -1,0 +1,26 @@
+{
+  "name": "login-app",
+  "version": "0.0.1",
+  "authors": [
+    "Duminda Wanninayake <deemind@gmail.com>"
+  ],
+  "description": "employee login application",
+  "keywords": [
+    "symfony",
+    "login"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.6",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container">
+
+        {{ form_start(form, {'attr' : {'novalidate' : 'novalidate', 'class': 'form-signin'}}) }}
+        {{ form_errors(form) }}
+
+        {{ form_label(form.userName) }}
+        {{ form_errors(form.userName) }}
+        {{ form_widget(form.userName, {'attr' : {'class': 'form-control'}}) }}
+
+        {{ form_label(form.password) }}
+        {{ form_errors(form.password) }}
+        {{ form_widget(form.password, {'attr' : {'class': 'form-control'}}) }}
+        
+        <label></label>
+
+        {{ form_widget(form.login, {'attr' : {'class': 'btn btn-lg btn-primary btn-block'}}) }}
+
+        {{ form_end(form) }}
+
+    </div>
+
+{% endblock %}

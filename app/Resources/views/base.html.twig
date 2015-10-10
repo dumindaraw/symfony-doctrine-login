@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Employee Management{% endblock %}</title>
+        {% stylesheets 'assets/vendor/bootstrap/dist/css/bootstrap.min.css'
+                       'assets/common/css/styles.css'%}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+
+        {% block navigation %}
+
+        {% endblock %}
+
+        {% block body %}
+
+        {% endblock %}
+
+        {% javascripts 
+            'assets/vendor/jquery/dist/jquery.min.js'
+            'assets/vendor/bootstrap/dist/js/bootstrap.min.js'
+            'assets/vendor/angular/angular.min.js'
+        %}
+        <script src="{{ asset_url }}"></script>
+
+
+        {% endjavascripts %}
+
+    </body>
+</html>

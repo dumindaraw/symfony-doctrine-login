@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Employee Management{% endblock %}</title>
+        {% stylesheets 'assets/vendor/bootstrap/dist/css/bootstrap.min.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">   
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="dashboard">My Info</a></li>
+                        <li><a href="employeeData">Employee Data</a></li>
+                        <li><a href="leave">Leave</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="logout">Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        {% block content %}
+
+        {% endblock %}
+
+    </div>
+
+
